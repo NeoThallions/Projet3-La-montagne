@@ -1,0 +1,127 @@
+@font-face {
+  font-family: "Inter";
+  src: url(../fonts/Inter_18pt-ExtraBold.ttf);
+}
+@font-face {
+  font-family: "Merriweather";
+  src: url(../fonts/Merriweather-Light.ttf);
+}
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  background: url(../img/bg.webp) center/cover fixed;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 70%;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+h1, h2, h3 {
+  font-family: "inter", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+p {
+  font-family: "Merriweather", sans-serif;
+  line-height: 30px;
+}
+
+header {
+  position: relative;
+  height: 74vh;
+}
+header h1 {
+  color: #FFFFFF;
+  font-size: 5rem;
+  width: 70%;
+  margin: 250px auto 70px;
+  letter-spacing: 10px;
+}
+header p {
+  color: #FFFFFF;
+  font-size: 1.2rem;
+  width: 90%;
+  margin: 0 auto 70px;
+  font-style: italic;
+}
+header i {
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  border: 2px solid #FFFFFF;
+  width: 70px;
+  height: 70px;
+  border-radius: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 22px;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 100px;
+  width: 100%;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(245, 245, 245, 0.171);
+}
+nav .leftPart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100px;
+  color: #FFFFFF;
+  font-size: 0.9rem;
+  font-family: "Inter", sans-serif;
+  letter-spacing: 2px;
+}
+nav .leftPart li {
+  display: block;
+  padding: 0 12px;
+  height: 100px;
+}
+nav .leftPart #this {
+  background-color: #F3F3F3;
+  color: #000;
+}
+nav .rightPart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100px;
+  color: #FFFFFF;
+}
+nav i {
+  border: none;
+  margin: 0 15px;
+  font-size: 1.5rem;
+}
+nav i:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}/*# sourceMappingURL=index.css.map */
