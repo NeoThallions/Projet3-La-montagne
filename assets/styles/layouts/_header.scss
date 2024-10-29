@@ -1,11 +1,13 @@
+// ####################    HEADER    #################
+
 header{
-    position: relative;
-    height: 74vh;
+    min-height: 74vh;
+    padding-top: 300px;
     h1{
         color: $white;
-        font-size: 5rem;
+        font-size: 4vw;
         width: 70%;
-        margin: 250px auto 70px;
+        margin: 0 auto 40px;
         letter-spacing: 10px;
     }
     p{
@@ -24,5 +26,6 @@ header{
         border-radius: 100px;
         align-items: center;
         padding: 22px;
+        margin-bottom: 150px;
     }    
 }
