@@ -9,9 +9,11 @@
     src: url(../fonts/Merriweather-Light.ttf);
 }
 // ****************     DECLARATION DES VARIABLES       ***************
-
+$font1: Inter, sans-serif;
+$font2: Merriweather, serif;
 $grey1: #F3F3F3;
 $grey2: grey;
+$grey3: rgba(128, 128, 128, 0.226);
 $white: #FFFFFF;
 $black: #000;
 
@@ -23,6 +25,7 @@ $black: #000;
     padding: 0;
     box-sizing: border-box;
     outline: none;
+    user-select: none;
 }
 
 body{
@@ -35,13 +38,13 @@ body{
 }
 
 h1, h2, h3, a{
-    font-family: "inter", sans-serif;
+    font-family: $font1;
     text-transform: uppercase;
     letter-spacing: 3px;    
     text-decoration: none;
 }
 p{
-    font-family:"Merriweather", sans-serif;
+    font-family: $font2;
     line-height: 30px;
 }
 a{
@@ -49,6 +52,23 @@ a{
 }
 a:visited{
     color: unset;
+}
+button{
+    margin: 40px 0 50px;
+    width: 180px;
+    height: 50px;
+    border: solid 2px $black;
+    background-color: $white;
+    text-transform: uppercase;
+    font-family: $font1;
+    letter-spacing: 3px;
+}
+button:hover{
+    background-color: $grey2;
+    border: $grey1;
+    color: $grey1;
+    transition: 0.2s;
+    cursor: pointer;
 }
 
 // ****************     MIXIN      ***************
