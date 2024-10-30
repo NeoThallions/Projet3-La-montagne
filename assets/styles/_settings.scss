@@ -4,13 +4,21 @@
     font-family: "Inter";
     src: url(../fonts/Inter_18pt-ExtraBold.ttf);
 }
+
 @font-face {
     font-family: "Merriweather";
     src: url(../fonts/Merriweather-Light.ttf);
 }
+
+@font-face {
+    font-family: "Dancing";
+    src: url(../fonts/DancingScript-Regular.ttf);
+}
+
 // ****************     DECLARATION DES VARIABLES       ***************
 $font1: Inter, sans-serif;
 $font2: Merriweather, serif;
+$font3: Dancing, arial;
 $grey1: #F3F3F3;
 $grey2: grey;
 $grey3: rgba(128, 128, 128, 0.226);
@@ -19,42 +27,55 @@ $black: #000;
 
 // ****************     PARAMETRES GENERAUX       ***************
 
-*{
+* {
     list-style: none;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     outline: none;
     user-select: none;
+
 }
 
-body{
+body {
     background: url(../img/bg.webp) center/cover fixed;
     text-align: center;
     justify-content: center;
     width: 70%;
+    max-width: 1200px;
     min-height: 100vh;
     margin: 0 auto;
+
+    @media screen and (max-width: 620px) {
+        width: 90%;
+    }
 }
 
-h1, h2, h3, a{
+h1,
+h2,
+h3,
+a {
     font-family: $font1;
     text-transform: uppercase;
-    letter-spacing: 3px;    
+    letter-spacing: 3px;
     text-decoration: none;
 }
-p{
+
+p {
     font-family: $font2;
     line-height: 30px;
 }
-a{
+
+a {
     letter-spacing: 2px;
 }
-a:visited{
+
+a:visited {
     color: unset;
 }
-button{
-    margin: 40px 0 50px;
+
+button {
+    margin-top: 40px;
     width: 180px;
     height: 50px;
     border: solid 2px $black;
@@ -63,7 +84,8 @@ button{
     font-family: $font1;
     letter-spacing: 3px;
 }
-button:hover{
+
+button:hover {
     background-color: $grey2;
     border: $grey1;
     color: $grey1;
@@ -73,7 +95,7 @@ button:hover{
 
 // ****************     MIXIN      ***************
 
-@mixin network{
+@mixin network {
     display: flex;
     margin: 20px 0 8px;
     font-size: 1.5rem;
